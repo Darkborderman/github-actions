@@ -1,0 +1,10 @@
+github:
+  description: Github action for general purposes.
+  enable_discussions: false
+  enable_issues: false
+  enable_projects: false
+  enable_wiki: false
+  homepage: https://github.com/Darkborderman/github-actions
+  template: false
+  topics:
+    - github-action
