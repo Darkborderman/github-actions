@@ -2,7 +2,7 @@ name: Github repository information
 description: Update Github repository information by JSON.
 
 inputs:
-  json_path:
+  json-path:
     description: JSON path
     required: True
 

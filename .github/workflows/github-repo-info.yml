@@ -1,0 +1,12 @@
+name: Update Github repository information
+
+on:
+  push
+
+jobs:
+  build:
+    steps:
+      - name: Update Github repo info
+        uses: Darkborderman/github-actions/github-repo-info@master
+        with:
+          json-file: metadata.json

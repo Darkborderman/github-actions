@@ -1,5 +1,5 @@
 sudo apt-get install jq -y
-gh repo edit --add-topic `jq -r '.topics | join(",")' gh_config.json`
-gh repo edit --homepage `jq -r '.homepage' gh_config.json`
-gh repo edit --description "`jq -r '.description' gh_config.json`"
-gh repo edit --enable-wiki=`jq -r '.enable_wiki' gh_config.json`
+gh repo edit --add-topic `jq -r '.topics | join(",")' $JSON_PATH`
+gh repo edit --homepage `jq -r '.homepage' $JSON_PATH`
+gh repo edit --description "`jq -r '.description' $JSON_PATH`"
+gh repo edit --enable-wiki=`jq -r '.enable_wiki' $JSON_PATH`
