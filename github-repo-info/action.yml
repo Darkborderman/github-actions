@@ -2,6 +2,7 @@ name: Github repository information
 description: Update Github repository information by JSON.
 
 runs:
+  using: "composite"
   steps:
     - run: $GITHUB_ACTION_PATH/script.sh
       shell: bash
