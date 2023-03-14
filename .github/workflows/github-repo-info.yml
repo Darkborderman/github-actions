@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Update Github repo info
         uses: Darkborderman/github-actions/github-repo-info@master
-        with:
-          json_path: metadata.json
+        env:
+          JSON_PATH: metadata.json
