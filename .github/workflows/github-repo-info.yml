@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-20
     steps:
       - name: Update Github repo info
         uses: Darkborderman/github-actions/github-repo-info@master
