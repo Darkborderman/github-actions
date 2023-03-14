@@ -1,3 +1,4 @@
+echo ${INPUT_JSON_PATH}
 export
 sudo apt-get install jq -y
 gh repo edit --add-topic `jq -r '.topics | join(",")' $JSON_PATH`

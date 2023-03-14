@@ -10,4 +10,4 @@ jobs:
       - name: Update Github repo info
         uses: Darkborderman/github-actions/github-repo-info@master
         with:
-          json-path: metadata.json
+          json_path: metadata.json
