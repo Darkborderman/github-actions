@@ -4,9 +4,12 @@ An action to update your Github repository information.
 
 ## Usage
 
-1. Create a Personal Access Token (PAT).
-The access token requires repository administration permission in order to edit metadata.
-* Github Action token can't edit metadata, even have `write-all` in Github Action job.
+1. Create a Classic Personal Access Token.
+The access token requires repository permission in order to edit metadata.
+* `repo:public_repo` scope for public repositories.
+![image](./pat_public.png)
+* `repo` scope for private repositories.
+![image](./pat_private.png)
 
 2. Configure your PAT to your repository or organization secrets(ex: `PAT_TOKEN`).
 
@@ -25,16 +28,18 @@ steps:
 
 ## Options
 
+Available options are under nested `github` section.
+
 | Name | Type | Example values |
 | --- | -- | -- |
-| github_description | string | Github action for general purposes. |
-| github_enable_discussions | bool | false |
-| github_enable_issues | bool | false |
-| github_enable_projects | bool | false |
-| github_enable_wiki | bool | false |
-| github_homepage | string | https://github.com/Darkborderman/github-actions |
-| github_template | bool | false |
-| github_topics | list of strings | ["github-action"] |
+| description | string | Github action for general purposes. |
+| enable_discussions | bool | false |
+| enable_issues | bool | false |
+| enable_projects | bool | false |
+| enable_wiki | bool | false |
+| homepage | string | https://github.com/Darkborderman/github-actions |
+| template | bool | false |
+| topics | list of strings | ["github-action"] |
 
 ## Design thoughts
 
